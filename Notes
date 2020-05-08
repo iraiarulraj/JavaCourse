@@ -1,0 +1,65 @@
+https://docs.oracle.com/javase/tutorial/index.html
+
+Keywords are case sensitive. public, Public, PUBLIC are different.
+Methods are the collection of statements. Main method is the entry point for the program.
+Primitive types: boolean, byte, char, short, int, long, float, double (Total 8)
+        int: 32 bits, min value : -2147483648, max value: 2147483647
+            Busted max value: 2147483647+1 = -2147483648 (overflow)
+        short: 16 bits,  min val: -32768, max val: 32767
+        byte: 8 bits,  min val: -128, max val: 127
+        long: 64 bits, min val: -9223372036854775808, max val: 9223372036854775807
+        Type Casting:
+            Value within parenthesis is considered as int by compiler. So casting is required for
+            byte and short.
+             int myNewIntValue =  (myMinIntValue / 2);
+             byte myNewByteValue =  (byte) (myMinByteValue / 2);
+             short myNewShortValue =  (short) (myMinShortValue / 2);
+         float: 32 bits, min val: 1.4E-45, max val: 3.4028235E38
+         double: 64 bits, min val: 4.9E-324, max val: 1.7976931348623157E308
+         int is the default type for whole numbers.Double is the default type for floating point numbers
+         float and double are not great for more precise calculations because of the nature of how the
+         values are stored in computer. Java overcomes it by using BigDecimal. So use BigDecimal where more
+         precise calculations are required. Use float and double only for general floating point calculations.
+         char: 16 bits, We can assign single character. We can also assign unicode eg. \u0044.
+         boolean: 8 bits. true or false.
+String:
+        String is a datatype which is not a primitive type, it is a Class. Sequence of characters.
+Operator and Operand:
+        10 % 3 = 1 ( % remainder operator)
+        result = result + 2 or result += 2
+        Ternary Operator:
+              boolean result = someCondition ? if_cond_true : if_cond_false;
+Control Statement:
+        switch: If same variable(condition) is validated for multiple values
+        if else: same or multiple variable(condition) can be validated
+Object Oriented Programming:
+    Overloading:
+        Reuse method name with different parameters.
+        Used in same class or in child class
+        Same method name, different parameters and may have different return types.
+        May have different access modifiers. May throw different exceptions.
+    Overriding:
+        Used to override the behavior in child class.
+        Always in 2 classes which has IS-A relationship.
+        Same name. Same parameter.
+        Same return type or covariant(child class)
+        Must not have lower modifier but may have higher modifier.
+        Must not throw a new or broader checked exception.
+    Static method:
+        Cannot access instance method and instance variable.
+        Cannot use this keyword.
+    Instance method:
+        Belongs to instance of a class. Instantiate using new keyword.
+        Can access instance method, instance variable, static method, static variable.
+    Static Variable:
+        Also called static member variable
+        Every instance shares same static variable.
+    Instance Variable:
+        Also called field or member variable.
+        Belongs to instance of a class.
+        Represents state of a instance.
+    Inheritance: Should satisfy IS-A relationship. Parent child relationship.
+    Composition: HAS-A relationship. Object has an instance of another object.
+    Encapsulation: Hide in working of the class. Protect members and methods of the class.
+    Polymorphism: Action takes place based on the object being invoked. Dynamic method dispatcher.
+
