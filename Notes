@@ -62,4 +62,14 @@ Object Oriented Programming:
     Composition: HAS-A relationship. Object has an instance of another object.
     Encapsulation: Hide in working of the class. Protect members and methods of the class.
     Polymorphism: Action takes place based on the object being invoked. Dynamic method dispatcher.
+Array: Collection of items. Can contain both primitives and objects.
+ArrayList:
+    Index based collection of data. Can contain only objects not primitives.
+    Actually Arraylist contain pointer(address) to the objects.
+    Add or remove operation in between the list is costlier as it has to move the position of rest of the items.
+LinkedList:
+    Each item points(has the address) to the next item.
+    Add or remove requires just update of the address of the next item.
+    No need to rearrange the position of the rest of the items.
+Iterator vs ListIterator:
 
